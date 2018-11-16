@@ -35,7 +35,7 @@ The update API also has a `.Update<T, K>` variant, where `T` is the document typ
 ----
 public class PartialElasticsearchProject
 {
-    public string Country { get; set }
+    public string Country { get; set; }
 }
 
 client.Update<ElasticsearchProject, PartialElasticsearchProject>(u => u
